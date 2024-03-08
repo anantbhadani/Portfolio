@@ -1,0 +1,95 @@
+*{
+     /* Reset margin and padding for all elements */
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+     /* Set the background image for the entire page */
+    background-image: url(../Portfolio/assets/Bg.jpg);
+}
+
+/* Header */
+.topnav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    background-color: darkslategray;
+}
+
+.topnav a {
+    /* Styles for navigation links */
+    float: left;
+    color: #131313;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+     /* Styles when hovering over navigation links */
+    background-color: #f9f9f9;
+    text-decoration: underline;
+}
+
+.topnav a.active {
+    /* Styles for the currently active navigation link */
+    background-color: #fcfcfc;
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    
+}
+
+.topnav .search-container {
+     /* Styles for the search container */
+    float: right;
+    padding-left: 25%;
+    padding-top: 5px;
+}
+
+.topnav input[type=text] {
+    /* Styles for the search input field */
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+     /* Styles for the search button */
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+     /* Styles when hovering over the search button */
+    background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+.topnav .search-container {
+    float: none;
+}
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+}
+.topnav input[type=text] {
+    border: 1px solid #ccc;  
+}
+}
